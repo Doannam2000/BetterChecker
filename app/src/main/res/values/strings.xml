@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_name">Battery Checker</string>
+    <string name="percent_target">Battery reach %s%% will notify</string>
+    <string name="cancel_notify_success">Cancel notification successful</string>
+    <string name="get_battery_infor_failed">There was an error getting battery information</string>
+    <string name="current_battery_status">Current battery status: </string>
+    <string name="full_battery">Full Battery</string>
+    <string name="charging">Charging</string>
+    <string name="not_charging">Not Charging</string>
+    <string name="unknow">Unknown</string>
+    <string name="full_battery_notice">The battery is full, please unplug the charger</string>
+    <string name="battery_information">Battery information</string>
+    <string name="setting">Setting</string>
+    <string name="cancel_notify">Cancel notification</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_percent">Select the amount of battery you want to notify</string>
+</resources>

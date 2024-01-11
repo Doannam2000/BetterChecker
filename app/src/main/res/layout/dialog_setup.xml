@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/choose_percent"
+        android:textColor="#000"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutSb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSetup"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/sbPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSetup"
+            android:layout_weight="5"
+            android:max="100"
+            android:maxHeight="15dp"
+            android:min="20"
+            android:progress="80"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:thumb="@drawable/custom_thumb"></SeekBar>
+
+        <TextView
+            android:id="@+id/tvPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSetup"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/sbPercent"
+            android:layout_weight="1.5"
+            android:text="80%"
+            android:textColor="#000"
+            android:textSize="13dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutSb">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSb"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSb"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</RelativeLayout>
